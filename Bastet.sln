@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D3F9115-DA50-4BA5-BB50-B9313EC5FDC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1AE34D43-D94F-45D7-BFBA-18A85F1B36AF}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Bastet", "src\Bastet\Bastet.xproj", "{73F2FCCB-D2D0-4DC5-A3E9-BEBD15A96683}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73F2FCCB-D2D0-4DC5-A3E9-BEBD15A96683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F2FCCB-D2D0-4DC5-A3E9-BEBD15A96683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F2FCCB-D2D0-4DC5-A3E9-BEBD15A96683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F2FCCB-D2D0-4DC5-A3E9-BEBD15A96683}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73F2FCCB-D2D0-4DC5-A3E9-BEBD15A96683} = {3D3F9115-DA50-4BA5-BB50-B9313EC5FDC2}
+	EndGlobalSection
+EndGlobal

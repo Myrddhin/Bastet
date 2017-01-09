@@ -1,0 +1,29 @@
+﻿.timer {
+  padding-top: 20px;
+  font-weight: 300;
+}
+.timer .days-wrapper,
+.timer .hours-wrapper,
+.timer .minutes-wrapper,
+.timer .seconds-wrapper,
+.timer .week-wrapper {
+  border: 1px solid #565656;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 9px;
+  height: 100px;
+  margin: 0 8px;
+  padding-top: 22px;
+  transition: all 0.3s ease 0s;
+  width: 100px;
+}
+.timer .days,
+.timer .hours,
+.timer .minutes,
+.timer .seconds,
+.timer .week {
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 45px;
+}

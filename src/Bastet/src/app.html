@@ -1,0 +1,48 @@
+﻿<template>
+    <!--<require from="bootstrap/css/bootstrap.min.css"></require>-->
+    <require from="./app.css"></require>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapsed" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Leïla & Yann</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="main-nav-collapsed">
+
+            <ul class="nav navbar-nav">
+                <li repeat.for="row of router.navigation"
+                    class="${row.isActive ? 'active' : ''}">
+                    <a href.bind="row.href">
+                        ${row.title}
+                        <i if.bind="row.settings.icon" class="fa fa-${row.settings.icon}"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="btn btn-block btn-google-plus" if.bind="!authenticated" click.delegate="authenticate()">
+                        Espace privé
+                    </a>
+                </li>
+                <li>
+                    <a class="btn btn-block btn-google-plus" if.bind="authenticated" click.delegate="logoff()">
+                        Se déconnecter
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="container main-container">
+        <router-view></router-view>
+    </div>
+</template>
